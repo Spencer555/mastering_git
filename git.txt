@@ -1,0 +1,18 @@
+git --version - check git version 
+git config --global user.name 'SPL' 
+git config --global user.email 'spl@gmail.com'
+
+
+git init - create repo 
+
+configure initail branch name to main 
+git config --global init.defaultBranch main
+
+git add - to track 
+git status - check status 
+
+
+
+git commit -m 'message' - get ur changes commited and make easier to revert when u break something a check point
+
+git log - see history of all commits created
