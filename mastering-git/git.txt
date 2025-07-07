@@ -16,3 +16,14 @@ git status - check status
 git commit -m 'message' - get ur changes commited and make easier to revert when u break something a check point
 
 git log - see history of all commits created
+
+to restore to prev verion - this does not undo the code written just revert to old one
+use git log to git commit hash u want to restore to
+then 
+git checkout hash 
+
+to go back to a current statu u have to run to do it with changes discarded git checkout -f main
+git checkout main
+
+
+a branch is a parallel version of ur code 
