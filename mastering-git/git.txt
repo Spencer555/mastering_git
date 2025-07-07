@@ -27,3 +27,27 @@ git checkout main
 
 
 a branch is a parallel version of ur code 
+
+local repo - a version of a project that exist on ur pc 
+remote repo -a version of a project stored on a servergit
+
+
+to create a new branch 
+git branch branch-name 
+
+
+to create a new branch and checkout to it to it shortcut 
+git checkout -b feature-branch 
+ 
+the branch copies from the branch u are on so make sure u are on the main branch b4 checkout or creating another branch of use this format
+
+git branch new-branch-name source-branch
+
+when writting commit msg it should follow this format if applied to codebase this commit would ....
+
+to publish ur local branch to the remote repo 
+upstreap - it links a local branch to a remote branch
+git push --set-upstream origin branchname
+
+git pull 
+fetch from remote repo
