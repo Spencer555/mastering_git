@@ -1,4 +1,4 @@
-console.log('Hello Git')
+console.log('Welcome Git')
 
 console.log('future ')
 
