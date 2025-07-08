@@ -50,20 +50,11 @@ upstreap - it links a local branch to a remote branch
 git push --set-upstream origin branchname
 
 git pull 
-fetch from remote repo
+fetch from remote repo 
 
 
-steps 
-1 clone the repo
-2 create a new branch from the main or another branch
-3 make your changes
-4 push the branch to the remote repo 
-5 open a pull request 
-6 merge the changes 
-7 pull the merged changes into your local main branch 
-8 repeat from step 2
+conflicts happen when two people make changes to the same file and line
 
 
-
-merge conflict
-when git is uncertain about which part to publish
+git merge main 
+to merge the branch u specified into the branch u are on
