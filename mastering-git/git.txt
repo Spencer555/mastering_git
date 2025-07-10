@@ -50,20 +50,62 @@ upstreap - it links a local branch to a remote branch
 git push --set-upstream origin branchname
 
 git pull 
-fetch from remote repo
+fetch from remote repo 
 
 
-steps 
-1 clone the repo
-2 create a new branch from the main or another branch
-3 make your changes
-4 push the branch to the remote repo 
-5 open a pull request 
-6 merge the changes 
-7 pull the merged changes into your local main branch 
-8 repeat from step 2
+conflicts happen when two people make changes to the same file and line
+
+
+git merge main 
+to merge the branch u specified into the branch u are on
+
+
+git saviour commands
+when u break code in production these commands save u 
+
+assuming u made 10 commits and u want to delete all the commits after the 3rd commit
+
+
+git reset 
+staged mode - soft reset it moves the specified commit in history but changes staged 
+
+staged changes - are those we add to git tracking sys by running the git add . 
+
+to do the soft mode 
+git reset --soft  <commit hash>
 
 
 
-merge conflict
-when git is uncertain about which part to publish
+mixed reset 
+git reset commit-hash
+it moves the specified commit in history and stages the changes and keeps them in the working directory so all changes made after the specified commit would be in ur working directory but they wont be stage u have to manually stage by doing git add .
+
+
+
+hard reset 
+moves to the specified commit in history and discards all other in the working directory and staging area
+
+git reset --hard  <commit hash>
+
+
+
+git revert 
+lets say u uploaded a feature that broke production and u want to undo it effects without losing the commit history u want the logs to be there but without losing the old commits
+
+
+
+git stash 
+u are in the middle of dev a feature but an urgent bug cause by ur team mate comes up and ur boss wants u to work on it first u havent finished ur feature and its not ready to commit yet but u still have to keep ur active changes somewhere so u can get but to them later
+this allows u temporarily save ur changes both staged and unstaged without actually commiting them 
+
+
+just type 
+git stash
+
+
+
+to get our code
+git stash stash-code 
+
+to get list of stash codes 
+git stash list
